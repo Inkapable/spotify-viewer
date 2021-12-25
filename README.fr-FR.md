@@ -30,7 +30,7 @@ Spotify Now Playing viewer va
 - ✅ - Montrer la jaquette d'album tournant en 3D
 - ✅ - Mettre en fond une couleur vibrante adaptée avec node-vibrant
 
-# Preview
+# Démonstration
 
 [Demo live](https://inkapable.github.io/spotify-viewer)
 
