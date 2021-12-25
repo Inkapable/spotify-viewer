@@ -10,52 +10,52 @@
   </a>
 </p>
 
-English | [French](./README.fr-FR.md)
+French | [English](./README.md)
 
 ---
 
 ## Introduction
 
-This is a simple project built in Vue 3 using the composition API.
+Ceci est un simple projet construit avec Vue 3 et la nouvelle API de composition.
 
-This project was built in 5 days for the Spotify Dev Jam, it is the first project 
-I ever built with Vue.js and served as an introduction to the framework and modern Javascript.
+Ce projet fut construit en 5 jours pour une Dev Jam Spotify, c'est mon premier projet 
+utilisant Vue 3 et m'a servi d'introduction au framework et au javascript moderne.
 
-## How does it work?
+## Comment ça marche ?
 
-The Spotify Now Playing viewer will 
+Spotify Now Playing viewer va 
 
-- ✅ - Use the Spotify Web API to get your current playing track (no other data is accessed)
-- ✅ - Use Access and Refresh Tokens to ensure that you're kept logged in between sessions
-- ✅ - Display the current track artist
-- ✅ - Show the Album cover spinning in 3D
-- ✅ - Set a matching vibrant background colour with node-vibrant
+- ✅ - Utilise l'API Spotify Web pour récupérer la piste en cours d'écoute (aucune autre donnée ne sera accédée)
+- ✅ - Utiliser des Access et Refresh tokens pour assurer le maintien de la connexion entre sessions
+- ✅ - Afficher la piste en cours d'écoute
+- ✅ - Montrer la jaquette d'album tournant en 3D
+- ✅ - Mettre en fond une couleur vibrante adaptée avec node-vibrant
 
 # Preview
 
-[Live demo](https://inkapable.github.io/spotify-viewer)
+[Demo live](https://inkapable.github.io/spotify-viewer)
 
-**Note**: Due to [#492](https://github.com/spotify/web-api/issues/492) of the Spotify Web API, there is currently no way
-to stream the now playing song. By such, this project is meant to be self-hosted to avoid rate-limiting.
+**Note**: En raison de l'issue [#492](https://github.com/spotify/web-api/issues/492) de l'API Web de Spotify, il n'y pour l'instant
+aucun moyen de stream la piste en cours d'écoute. De ce fait, ce projet est fait pour être hébergé localement pour éviter les rate-limits.
 
-If you want to use the project you should fork it and build with Netlify or Github Pages using your own API keys (see TODO). 
+Si vous voulez utiliser ce projet, il est recommandé de le fork et l'héberger avec Netlify ou Github Pages avec vos propres clés API (voir )
 
-The demo website above only serves as demonstration, there is no guarantee it won't be rate-limited
-due to the nature of the API calls
+Le site de demo ci-dessus ne sert uniquement que de démonstration, il n'y a aucune garantie qu'il ne sera pas rate-limité
+en raison de la nature des appels API.
 
-![Preview image](https://i.imgur.com/KDhOG9A.png)
-![Preview image](https://i.imgur.com/6L7oT0Z.png)
-![Preview image](https://i.imgur.com/YR1PjsD.png)
+![Image de demonstration](https://i.imgur.com/KDhOG9A.png)
+![Image de demonstration](https://i.imgur.com/6L7oT0Z.png)
+![Image de demonstration](https://i.imgur.com/YR1PjsD.png)
 
-## Browser support
+## Support Navigateurs
 
-Most modern browsers are supported (excluding Internet Explorer).
+La plupart des navigateurs modernes sont supportés (à l'exception d'Internet Explorer).
 
 | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](https://godban.github.io/browsers-support-badges/) | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](https://godban.github.io/browsers-support-badges/) | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](https://godban.github.io/browsers-support-badges/) | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](https://godban.github.io/browsers-support-badges/) | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/opera/opera_48x48.png" alt="Opera" width="24px" height="24px" />](https://godban.github.io/browsers-support-badges/) |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Edge                                                                                                                                                                                               | Firefox                                                                                                                                                                                                | Chrome                                                                                                                                                                                              | Safari                                                                                                                                                                                              | Opera                                                                                                                                                                                            |
 
-## How to use
+## Comment utiliser
 
 You can either clone the repo, compile the code offline, and upload to your own webserver or use one of 
 the supported platforms.
@@ -63,74 +63,74 @@ the supported platforms.
 The tutorial below is for Netlify, Vue.js works with other platforms as well such as Github and Gitlab Pages
 (for more info, please check out: https://cli.vuejs.org/guide/deployment.html#platform-guides)
 
-### 1. Fork this repository
+### 1. Faire un fork du repertoire
 
-On this page, click on the 'Fork' button in the top-right to create a copy of the repo as-is on your account. Alternatively, you can clone the repo and push to Github.
+Sur cette page, cliquez sur le bouton 'Fork' en haut à droite pour créer une copie du repertoire tel-quel. Sinon vous pouvez cloner le repo et le push sur votre compte Github.
 
-### 2. Create a new project on Netlify
+### 2. Créer un nouveau projet sur Netlify
 
-Log in to Netlify and click 'New site from Git'.
+Connectez-vous sur Netlify et cliquez sur 'Nouveau site depuis Git'
 
-If you're doing this for the first time, you will need to authorise your Github account with Netlify by following the instructions.
+Si c'est votre première fois avec le service, vous aurez besoin de donner accès à votre compte Github sur Netlify en suivant les instructions du site.
 
-Once authorised, follow the on-screen instructions to connect your repository. You should be fine to leave the default settings as-is here.
+Une fois l'accès autorisée, suivez les instructions du site pour relier votre repo. Les paramètres par défaut devraient suffire.
 
-Click on 'Deploy site'.
+Cliquez ensuite sur 'Déployer le site'.
 
-_Note: This project was built around Node 16. This has been set in the project environment._
+_Note: Ce projet a été construit avec Node 16._
 
-### 3. Create Spotify Client keys.
+### 3. Créer les clés clients Spotify
 
-To allow authorisation to your track data, you'll need to generate client keys. You can do this by logging in to the [Spotify Dashboard](https://developer.spotify.com/dashboard/applications) and creating an app.
+Pour permettre le suivi de vos données, il vous faut générer des clés client Spotify. Vous pouvez faire cela en vous connectant à votre [Tableau de bord](https://developer.spotify.com/dashboard/applications) et en créant une nouvelle application.
 
-Set the 'Redirect URI' as the URL of your project in Netlify. This must be set else Spotify won't authorise the app.
+Pour le 'Redirect URI', inscrivez l'URL de votre projet sur Netlify.
 
-You can leave the other settings (Callback URL, Bundle IDs etc) blank.
+Vous pouvez laisser les autres paramètres vides.
 
-Copy down the Client Secret and Client ID and save your app in the Spotify Dashboard.
+Copiez le Client Secret et Client ID et enregistrer les changements sur votre Tableau de bord Spotify.
 
-### 4. Add the Client ID and Client Secret to Netlify
+### 4. Ajoutez vos clés à Netlify
 
-Now that we have our Spotify API keys, we must let the app know that they exist.
+Maintenant que nous avons nos clés API Spotify, il nous suffit de les transmettre à notre application.
 
 To do this, navigate to Netlify > Site Settings > Build & Deploy > Environment
+Pour ce faire, naviguez vers Netlify > Parameters du site > Deployment > Environnement
 
-Under 'Environment variables', add two fields. The 'Keys' can be found in the `env.sample` file and the values will be the Client ID and Client Secret, respectively.
+Sous 'Variables environment', ajoutez deux champs. Le nom des champs peut être trouvés dans le fichier `env.sample` et les valeurs sont les clés d'API correspondantes.
 
-Hit save.
+Enregistrez vos changements.
 
-### 5. View App
+### 5. Voir l'application
 
 Once the environment variables are in, you can now navigate to your Netlify site. You'll be prompted with a Spotify login button. Do that, and you're good to go!
+Une fois la procédure terminée, vous pouvez naviguez vers votre site Netlify. Vous serez accueillie par un bouton de connexion, en un clique               
 
-## Local setup
+## Mise en place local
 ```
 npm install
 ```
 
-#### Compiles and hot-reloads for development
+#### Compile et hot-reloads pour phase de development
 ```
 npm run serve
 ```
 
-#### Compiles and minifies for production
+#### Compile et minifie pour phase de production
 ```
 npm run build
 ```
 
-#### Lints and fixes files
+#### Lints et correction des fichiers
 ```
 npm run lint
 ```
 
-#### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+#### Modifier la configuration
+Voir [Configuration Reference](https://cli.vuejs.org/config/).
 
-## Credits
+## Crédits
 
-This project was heavily inspired by [Nowify](https://github.com/jonashcroft/Nowify). 
-
-Please give them your support!
+Ce projet s'est fortement inspiré de [Nowify](https://github.com/jonashcroft/Nowify).
 
 ## License
 
