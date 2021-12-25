@@ -1,11 +1,10 @@
-<center> Spotify Now Playing Viewer </center>
-=============================================
+# <center> Spotify Now Playing Viewer </center>
 
 <p align="center">
   <a href="https://github.com/vuejs/vue">
     <img src="https://img.shields.io/badge/Vue-3.0.0-success" alt="vue">
   </a>
-  <a href="https://github.com/PanJiaChen/vue-element-admin/blob/master/LICENSE">
+  <a href="https://github.com/Inkapable/spotify-viewer/blob/master/LICENSE">
     <img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="license">
   </a>
 </p>
@@ -38,7 +37,7 @@ The Spotify Now Playing viewer will
 **Note**: Due to [#492](https://github.com/spotify/web-api/issues/492) of the Spotify Web API, there is currently no way
 to stream the now playing song. By such, this project is meant to be self-hosted to avoid rate-limiting.
 
-If you want to use the project you should fork it and build with Netlify or Github Pages using your own API keys (see TODO). 
+If you want to use the project you should fork it and build with Netlify or Github Pages using your own API keys (see [How to use](#how-to-use)). 
 
 The demo website above only serves as demonstration, there is no guarantee it won't be rate-limited
 due to the nature of the API calls
