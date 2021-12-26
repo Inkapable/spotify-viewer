@@ -40,10 +40,10 @@ The Spotify Now Playing viewer will
 **Note**: Due to [#492](https://github.com/spotify/web-api/issues/492) of the Spotify Web API, there is currently no way
 to stream the now playing song. By such, this project is meant to be self-hosted to avoid rate-limiting.
 
-If you want to use the project you should fork it and build with Netlify or Github Pages using your own API keys (see [How to use](#how-to-use)).
+If you want to use the project you should fork it and build with Netlify or your own webserver using your own API keys (see [How to use](#how-to-use)).
 
-The demo website above only serves as demonstration, there is no guarantee it won't be rate-limited
-due to the nature of the API calls
+The demo website above only serves as demonstration, due to the API limits imposed by Spotify only the users
+whose emails have been manually added to the app can log in.
 
 ![Preview image](https://i.imgur.com/KDhOG9A.png)
 ![Preview image](https://i.imgur.com/6L7oT0Z.png)
