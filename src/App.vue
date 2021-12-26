@@ -2,6 +2,7 @@
   <router-view v-slot="{ Component}">
     <Suspense>
       <template #default>
+        <notifications position="bottom left"/>
         <component :is="Component"/>
       </template>
       <template #fallback>
@@ -11,8 +12,18 @@
   </router-view>
 </template>
 <script>
+import {notify} from "@kyvg/vue3-notification";
+
 export default {
-  name: 'App'
+  name: 'App',
+  setup(){
+    // Feel free to remove/edit this notification on your own webserver
+    notify({
+      type: "warn",
+      text: "Due to Spotify's API limits, you need to have your email manually granted access to log in on this demo website.",
+      clear: true,
+    });
+  }
 }
 </script>
 
