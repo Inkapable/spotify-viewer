@@ -21,7 +21,6 @@ export default {
     notify({
       type: "warn",
       text: "Due to Spotify's API limits, you need to have your email manually granted access to log in on this demo website.",
-      clear: true,
     });
   }
 }
