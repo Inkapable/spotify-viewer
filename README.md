@@ -17,12 +17,12 @@ English | [French](./README.fr-FR.md)
 
 This is a simple project built in Vue 3 using the composition API.
 
-This project was built in 5 days for the Spotify Dev Jam, it is the first project 
+This project was built in 5 days for the Spotify Dev Jam, it is the first project
 I ever built with Vue.js and served as an introduction to the framework and modern Javascript.
 
 ## How does it work?
 
-The Spotify Now Playing viewer will 
+The Spotify Now Playing viewer will
 
 - ✅ - Use the Spotify Web API to get your current playing track (no other data is accessed)
 - ✅ - Use Access and Refresh Tokens to ensure that you're kept logged in between sessions
@@ -37,7 +37,7 @@ The Spotify Now Playing viewer will
 **Note**: Due to [#492](https://github.com/spotify/web-api/issues/492) of the Spotify Web API, there is currently no way
 to stream the now playing song. By such, this project is meant to be self-hosted to avoid rate-limiting.
 
-If you want to use the project you should fork it and build with Netlify or Github Pages using your own API keys (see [How to use](#how-to-use)). 
+If you want to use the project you should fork it and build with Netlify or Github Pages using your own API keys (see [How to use](#how-to-use)).
 
 The demo website above only serves as demonstration, there is no guarantee it won't be rate-limited
 due to the nature of the API calls
@@ -56,11 +56,11 @@ Most modern browsers are supported (excluding Internet Explorer).
 
 ## How to use
 
-You can either clone the repo, compile the code offline, and upload to your own webserver or use one of 
+You can either clone the repo, compile the code offline, and upload to your own webserver or use one of
 the supported platforms.
 
 The tutorial below is for Netlify, Vue.js works with other platforms as well such as Github and Gitlab Pages
-(for more info, please check out: https://cli.vuejs.org/guide/deployment.html#platform-guides)
+(though do take precautions with your API keys, for more info, please check out: https://cli.vuejs.org/guide/deployment.html#platform-guides)
 
 ### 1. Fork this repository
 
@@ -127,9 +127,12 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## Credits
 
-This project was heavily inspired by [Nowify](https://github.com/jonashcroft/Nowify). 
+This project was heavily inspired by [Nowify](https://github.com/jonashcroft/Nowify).
 
 Please give them your support!
+
+Thanks [node-vibrant](https://github.com/Vibrant-Colors/node-vibrant)
+and [Bootstrap 5.0](https://github.com/twbs/bootstrap) for making the design process much easier.
 
 ## License
 

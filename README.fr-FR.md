@@ -131,6 +131,9 @@ Voir [Configuration Reference](https://cli.vuejs.org/config/).
 
 Ce projet s'est fortement inspiré de [Nowify](https://github.com/jonashcroft/Nowify).
 
+Je remercie [node-vibrant](https://github.com/Vibrant-Colors/node-vibrant)
+et [Bootstrap 5.0](https://github.com/twbs/bootstrap) de m'avoir facilité la phase de design.
+
 ## License
 
 [MIT](https://github.com/Inkapable/spotify-viewer/blob/master/LICENSE)
