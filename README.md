@@ -7,6 +7,9 @@
   <a href="https://github.com/Inkapable/spotify-viewer/blob/master/LICENSE">
     <img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="license">
   </a>
+  <a href="https://app.netlify.com/sites/dazzling-visvesvaraya-84f8b1/deploys">
+    <img src="https://api.netlify.com/api/v1/badges/3e981827-686d-47bd-b75c-6c60f22882b8/deploy-status" alt="Netlify">
+  </a>
 </p>
 
 English | [French](./README.fr-FR.md)
