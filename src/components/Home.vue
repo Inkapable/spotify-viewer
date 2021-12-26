@@ -92,7 +92,7 @@ export default {
 
       if (grantType === 'authorization_code') {
         fetchData.code = config.authCode
-        fetchData.redirect_uri = window.location.origin
+        fetchData.redirect_uri = window.location.origin + window.location.pathname
       }
 
       if (grantType === 'refresh_token') {

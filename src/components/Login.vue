@@ -45,7 +45,7 @@ export default {
       searchParams.toString()
       searchParams.append('client_id', props.clientid)
       searchParams.append('response_type', 'code')
-      searchParams.append('redirect_uri', window.location.origin)
+      searchParams.append('redirect_uri', window.location.origin + window.location.pathname)
       searchParams.append(
           'state',
           [
