@@ -36,7 +36,7 @@ Spotify Now Playing viewer va
 
 # Démonstration
 
-[Demo live](https://inkapable.github.io/spotify-viewer)
+[Demo live](https://spotify.liam.social)
 
 **Note**: En raison de l'issue [#492](https://github.com/spotify/web-api/issues/492) de l'API Web de Spotify, il n'y pour l'instant
 aucun moyen de stream la piste en cours d'écoute. De ce fait, ce projet est fait pour être hébergé localement pour éviter les rate-limits.

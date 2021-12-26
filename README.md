@@ -35,7 +35,7 @@ The Spotify Now Playing viewer will
 
 # Preview
 
-[Live demo](https://inkapable.github.io/spotify-viewer)
+[Live demo](https://spotify.liam.social)
 
 **Note**: Due to [#492](https://github.com/spotify/web-api/issues/492) of the Spotify Web API, there is currently no way
 to stream the now playing song. By such, this project is meant to be self-hosted to avoid rate-limiting.
