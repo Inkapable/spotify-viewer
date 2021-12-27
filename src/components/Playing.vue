@@ -41,6 +41,7 @@
 <script>
 import {computed, nextTick, onBeforeUnmount, onMounted, ref, watch} from "vue";
 import * as Vibrant from 'node-vibrant'
+import { setAppColours } from '../utils/colors.js'
 
 export default {
   name: "Playing",
@@ -75,20 +76,6 @@ export default {
       }
     }
 
-    /**
-     * Set the stylings of the app based on received colours.
-     */
-    function setAppColours(color, background){
-      document.body.style.setProperty(
-          'color',
-          color
-      )
-
-      document.body.style.setProperty(
-          'background-color',
-          background
-      )
-    }
 
     /**
      * Make the network request to Spotify to
@@ -132,11 +119,12 @@ export default {
         data = await response.json()
         playerResponse.value = data
       } catch (error) {
-        handleExpiredToken()
+
         document.title = 'No music detected 🤔'
+
         setAppColours('white', '#183059')
         playerData.value = getEmptyPlayer()
-
+        handleExpiredToken()
         await nextTick(() => {
           emit('spotifyTrackUpdated', data)
         })
@@ -147,6 +135,7 @@ export default {
      * Handle newly updated Spotify Tracks.
      */
     function handleNowPlaying() {
+
       if (
           playerResponse.value.error?.status === 401 ||
           playerResponse.value.error?.status === 400

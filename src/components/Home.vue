@@ -67,9 +67,22 @@ export default {
       trackTitle: '',
       trackAlbum: []
     })
+    /**
+     * Watch authorisation code.
+     */
+    watch(() => config.authCode, async () => {
+      console.log('Authcode has changed')
+      await requestAccessTokens()
+    })
 
-    // Watch for change in status to store the config in localStorage
-    watch(() => config.status, () => {
+    /**
+     * Watch authorisation status.
+     */
+    watch(() => config.status, async () => {
+      if (config.refreshToken) {
+        console.log('token getting refreshed...')
+        await requestAccessTokens('refresh_token')
+      }
       setStoredAuth(config)
     })
 
@@ -78,7 +91,6 @@ export default {
     // Update config if authCode exists
     if (urlAuthCode) {
       config.authCode = urlAuthCode
-      await requestAccessTokens()
     }
 
     /**
