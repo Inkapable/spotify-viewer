@@ -98,6 +98,12 @@ export default {
          * Fetch error.
          */
         if (!response.ok) {
+          if (response.status === 403) {
+            setAppColours('white', '#183059')
+            emit('clear')
+            window.alert("Your account is not whitelisted on this app")
+            return
+          }
           throw new Error(`An error has occured: ${response.status}`)
         }
 
@@ -119,9 +125,6 @@ export default {
         data = await response.json()
         playerResponse.value = data
       } catch (error) {
-
-        document.title = 'No music detected 🤔'
-
         setAppColours('white', '#183059')
         playerData.value = getEmptyPlayer()
         handleExpiredToken()

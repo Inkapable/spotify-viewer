@@ -11,7 +11,8 @@
           :endpoints="endpoints"
           :player="player"
           @spotifyTrackUpdated="updateCurrentTrack"
-          @requestRefreshToken="requestRefreshTokens">
+          @requestRefreshToken="requestRefreshTokens"
+          @clear="clear">
       </Playing>
     </template>
     <template #fallback>
@@ -79,6 +80,7 @@ export default {
      * Watch authorisation status.
      */
     watch(() => config.status, async () => {
+      console.log(config)
       if (config.refreshToken) {
         console.log('token getting refreshed...')
         await requestAccessTokens('refresh_token')
@@ -175,6 +177,17 @@ export default {
     }
 
     /**
+     * Clears out and disconnects the user
+     */
+    function clear(){
+      setStoredAuth()
+      config.authCode = ''
+      config.accessToken = ''
+      config.refreshToken = ''
+      config.status = false
+    }
+
+    /**
      * Update the player object.
      * @param track
      */
@@ -198,7 +211,7 @@ export default {
       await requestAccessTokens('refresh_token')
     }
 
-    return {config, endpoints, player, getStatus, requestRefreshTokens, updateCurrentTrack}
+    return {config, endpoints, player, clear, getStatus, requestRefreshTokens, updateCurrentTrack}
   }
 }
 </script>
