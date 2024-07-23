@@ -13,7 +13,7 @@
 </p>
 
 
-French | [English](./README.md)
+Français | [English](./README.md)
 
 ---
 
@@ -28,7 +28,7 @@ utilisant Vue 3 et m'a servi d'introduction au framework et au javascript modern
 
 Spotify Now Playing viewer va 
 
-- ✅ - Utilise l'API Spotify Web pour récupérer la piste en cours d'écoute (aucune autre donnée ne sera accédée)
+- ✅ - Utiliser l'API Spotify Web pour récupérer la piste en cours d'écoute (aucune autre donnée ne sera accédée)
 - ✅ - Utiliser des Access et Refresh tokens pour assurer le maintien de la connexion entre sessions
 - ✅ - Afficher la piste en cours d'écoute
 - ✅ - Montrer la jaquette d'album tournant en 3D

@@ -12,7 +12,7 @@
   </a>
 </p>
 
-English | [French](./README.fr-FR.md)
+English | [Français](./README.fr-FR.md)
 
 ---
 
@@ -45,9 +45,9 @@ If you want to use the project you should fork it and build with Netlify or your
 The demo website above only serves as demonstration, due to the API limits imposed by Spotify only the users
 whose emails have been manually added to the app can log in.
 
-![Preview image](https://i.imgur.com/KDhOG9A.png)
-![Preview image](https://i.imgur.com/6L7oT0Z.png)
-![Preview image](https://i.imgur.com/YR1PjsD.png)
+![Preview image](https://i.imgur.com/05SxjxQ.png)
+![Preview image](https://i.imgur.com/eyhmYif.png)
+![Preview image](https://i.imgur.com/BukzEVz.png)
 
 ## Browser support
 
