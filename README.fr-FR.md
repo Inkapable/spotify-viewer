@@ -46,9 +46,9 @@ Si vous voulez utiliser ce projet, il est recommandé de le fork et l'héberger 
 Le site de demo ci-dessus ne sert uniquement que de démonstration, en raison des limites API de Spotify, seules les utilisateurs
 ajoutés manuellement peuvent s'y connecter.
 
-![Image de demonstration](https://i.imgur.com/KDhOG9A.png)
-![Image de demonstration](https://i.imgur.com/6L7oT0Z.png)
-![Image de demonstration](https://i.imgur.com/YR1PjsD.png)
+![Image de demonstration](https://i.imgur.com/05SxjxQ.png)
+![Image de demonstration](https://i.imgur.com/eyhmYif.png)
+![Image de demonstration](https://i.imgur.com/BukzEVz.png)
 
 ## Support Navigateurs
 
